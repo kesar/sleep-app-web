@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>4-7-8 Breathe - Fall Asleep in Minutes</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #0c0e14;
+      color: #e6e8ff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .hero {
+      text-align: center;
+      padding: 80px 24px 40px;
+      max-width: 600px;
+    }
+    .orb {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background: radial-gradient(circle at 40% 35%, #fff, #bbc3fc 40%, rgba(187,195,252,0.3) 75%, transparent);
+      margin: 0 auto 40px;
+      box-shadow: 0 0 60px rgba(187,195,252,0.3), 0 0 120px rgba(187,195,252,0.1);
+      animation: pulse 3s ease-in-out infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); opacity: 0.9; }
+      50% { transform: scale(1.05); opacity: 1; }
+    }
+    h1 {
+      font-size: 42px;
+      font-weight: 300;
+      letter-spacing: 1px;
+      margin-bottom: 16px;
+    }
+    h1 span { color: #bbc3fc; }
+    .subtitle {
+      font-size: 18px;
+      color: rgba(230,232,255,0.6);
+      line-height: 1.6;
+      margin-bottom: 40px;
+    }
+    .badge {
+      display: inline-block;
+    }
+    .badge img {
+      height: 54px;
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 24px;
+      padding: 40px 24px;
+      max-width: 800px;
+      width: 100%;
+    }
+    .feature {
+      background: rgba(187,195,252,0.06);
+      border: 1px solid rgba(187,195,252,0.1);
+      border-radius: 16px;
+      padding: 28px;
+    }
+    .feature h3 {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: #bbc3fc;
+    }
+    .feature p {
+      font-size: 15px;
+      color: rgba(230,232,255,0.5);
+      line-height: 1.5;
+    }
+    .how-it-works {
+      text-align: center;
+      padding: 60px 24px;
+      max-width: 600px;
+    }
+    .how-it-works h2 {
+      font-size: 28px;
+      font-weight: 300;
+      margin-bottom: 32px;
+    }
+    .steps {
+      display: flex;
+      justify-content: center;
+      gap: 32px;
+      flex-wrap: wrap;
+    }
+    .step {
+      text-align: center;
+    }
+    .step .number {
+      font-size: 48px;
+      font-weight: 300;
+      color: #bbc3fc;
+    }
+    .step .label {
+      font-size: 14px;
+      color: rgba(230,232,255,0.5);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-top: 4px;
+    }
+    .step .desc {
+      font-size: 13px;
+      color: rgba(230,232,255,0.35);
+      margin-top: 4px;
+    }
+    .arrow {
+      font-size: 24px;
+      color: rgba(187,195,252,0.3);
+      align-self: center;
+    }
+    footer {
+      text-align: center;
+      padding: 40px 24px;
+      color: rgba(230,232,255,0.3);
+      font-size: 13px;
+    }
+    footer a {
+      color: rgba(187,195,252,0.5);
+      text-decoration: none;
+    }
+    footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <div class="orb"></div>
+    <h1>4-7-8 <span>Breathe</span></h1>
+    <p class="subtitle">
+      Fall asleep in minutes with the scientifically-backed 4-7-8 breathing technique.
+      A calming, voice-guided experience designed for bedtime.
+    </p>
+    <a class="badge" href="https://apps.apple.com/app/4-7-8-breathe-sleep-relax/id965630124">
+      <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+    </a>
+  </div>
+
+  <div class="how-it-works">
+    <h2>How it works</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="number">4</div>
+        <div class="label">seconds</div>
+        <div class="desc">Breathe in</div>
+      </div>
+      <div class="arrow">&rarr;</div>
+      <div class="step">
+        <div class="number">7</div>
+        <div class="label">seconds</div>
+        <div class="desc">Hold</div>
+      </div>
+      <div class="arrow">&rarr;</div>
+      <div class="step">
+        <div class="number">8</div>
+        <div class="label">seconds</div>
+        <div class="desc">Breathe out</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="features">
+    <div class="feature">
+      <h3>Voice Guided</h3>
+      <p>A gentle voice guides each phase so you can close your eyes and drift off.</p>
+    </div>
+    <div class="feature">
+      <h3>Lock Screen Audio</h3>
+      <p>Sessions keep playing when your phone is locked. No need to watch the screen.</p>
+    </div>
+    <div class="feature">
+      <h3>Ocean Soundscape</h3>
+      <p>Calming ocean waves and subtle tones create a peaceful atmosphere.</p>
+    </div>
+    <div class="feature">
+      <h3>Haptic Feedback</h3>
+      <p>Gentle vibrations guide your breathing rhythm without any sound.</p>
+    </div>
+    <div class="feature">
+      <h3>Bedtime Reminders</h3>
+      <p>Set a nightly reminder to build a consistent sleep routine.</p>
+    </div>
+    <div class="feature">
+      <h3>Completely Free</h3>
+      <p>No subscriptions, no ads, no in-app purchases. Just better sleep.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Cesar Rodriguez. <a href="privacy.html">Privacy Policy</a> &middot; <a href="mailto:kesarr@gmail.com">Contact</a></p>
+  </footer>
+</body>
+</html>
